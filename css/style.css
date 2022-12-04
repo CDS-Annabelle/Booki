@@ -322,3 +322,31 @@ article.card-activites img {
     object-fit: cover;
 }
 
+/* footer */
+footer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    margin-top: 60px;
+    padding: 45px;
+}
+
+.foot {
+    flex: 1;
+}
+
+footer ul {
+    list-style:none;
+    padding:0;
+}
+
+footer ul li {
+    text-align:left;
+}
+
+footer ul li a {
+    text-decoration: none;
+    line-height: 1.8em;
+    color: #000;
+    font-size: 1em;
+}
