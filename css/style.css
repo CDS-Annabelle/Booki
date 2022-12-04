@@ -181,3 +181,53 @@ i.fa-solid.fa-info{
     margin-right: 10px;
     font-size: 0.8em;
 }
+
+/*--- main ---*/
+
+/* Hébergements */
+#hebergement {
+    display: flex;
+    justify-content: space-between;
+}
+
+article{
+    box-shadow: 0px 3px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Marseille */
+section.marseille {
+    flex:2.4;
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin-right:40px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card article {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+article.card-marseille{
+    margin-bottom:35px;
+}
+
+article.card-marseille img {
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+div.container{
+    padding: 0px 10px 5px 10px;
+    line-height: 0.6em;
+}
+
