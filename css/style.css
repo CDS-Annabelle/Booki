@@ -532,12 +532,12 @@ i.fa-solid.fa-search {
 }
 
 button.filter {
-    padding-left: 5px;
+    padding-left: 10px;
     font-weight: 400;
     font-size: 0.8em;
     margin: 10px 5px;
     text-align: left;
-    width: 160px;
+    width: calc(50% - 10px);
 }
 
 /*main */
