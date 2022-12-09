@@ -1,120 +1,121 @@
-* {
+body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: Raleway, sans-serif;
-    font-size: 1em;
-}
-
 /* font */
-h1{
+h1 {
     font-weight: 700;
-    font-size: 1.275em;
+    font-size: 1.375rem;
 }
 
-h2{
+h2 {
     font-weight: 700;
-    font-size: 1.375em;
+    font-size: 1.375rem;
 }
 
-h3{
+h3 {
     font-weight: 700;
-    font-size: 1em;
     line-height: 1.2;
 }
 
-i{
-   color:#0065FC;
+i {
+    color: #0065FC;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
 }
 
 /* Home */
-#home-page{
-    width: 100%;
+#home-page {
     max-width: 1400px;
-    margin:auto;
+    margin: auto;
     padding-inline: 50px;
 }
 
 /*--- Header ---*/
-header{
-    display:flex;
+header {
+    display: flex;
     justify-content: space-between;
-    height: 100px;
     align-items: center;
 }
 
 /* logo */
-#logo img{
-    width:61.09px;
-    height:auto;
+img.logo {
+    width: 61.09px;
+    height: auto;
 }
 
 /* nav */
-nav ul{
+nav ul {
     list-style-type: none;
     display: flex;
     height: 100px;
     margin-top: 0;
 }
 
-nav li{
-    display:flex;
+nav a {
+    font-weight: 500;
+    color: #000;
+    padding-top: 15px;
+}
+
+nav li {
+    display: flex;
     align-items: center;
-    margin-right: 25px;
+    margin-right: 40px;
     border-top: 2px solid transparent;
 }
 
-nav a{
-    font-weight: 500;
-    font-size: 16px;
-    color:#000;
-    padding-top:15px;
+nav li:hover {
+    border-top: 2px solid #0065FC;
 }
 
-nav li:hover{
-    color:#0065FC;
-    border-top: 2px solid #0065FC;
+nav a:hover {
+    color: #0065FC;
 }
 
 /* --- below-header ---*/
 /* form */
-.form-city{
+.form-city {
     display: flex;
 }
 
-i.fa-sharp.fa-solid.fa-location-dot{
+i.fa-sharp.fa-solid.fa-location-dot {
     background: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-    padding:20px;
+    padding: 20px;
     color: #000;
 }
 
-input#city{
+input#city {
     font-weight: 700;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     text-align: center;
-    border:1px solid #f2f2f2;
+    border: 1px solid #f2f2f2;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: black;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: black;
-  }
+}
 
 input.search {
     background: #0065FC;
@@ -127,50 +128,48 @@ input.search {
 }
 
 i.fa-solid.fa-search {
-    display:none;
+    display: none;
 }
 
-
-
 /* filters */
-#filter{
-    display:flex;
+#filter {
+    display: flex;
     margin: 30px 0;
 }
 
-.title-filter{
+.title-filter {
     display: flex;
     align-items: center;
     font-weight: 700;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     margin-right: 25px;
 }
 
-button.filter{
+button.filter {
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     padding: 15px;
     margin-right: 25px;
     background: #fff;
     font-weight: 700;
-    font-size: 1.063em;
+    font-size: 1.063rem;
 }
 
-button.filter:hover{
+button.filter:hover {
     background: #DEEBFF;
 }
 
-#filter i{
-    padding-right:10px;
+#filter i {
+    padding-right: 10px;
 }
 
-.info{
-    display:flex;
+.info {
+    display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
 
-i.fa-solid.fa-info{
+i.fa-solid.fa-info {
     border: 1px solid #D9D9D9;
     box-sizing: border-box;
     border-radius: 100%;
@@ -180,28 +179,27 @@ i.fa-solid.fa-info{
     width: 24px;
     height: 24px;
     margin-right: 10px;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 /*--- main ---*/
-
 /* Hébergements */
 #hebergement {
     display: flex;
     justify-content: space-between;
 }
 
-article{
+article {
     box-shadow: 0px 3px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* Marseille */
 section.marseille {
-    flex:2.4;
+    flex: 2.4;
     background: #F2F2F2;
     border-radius: 20px;
     padding: 20px;
-    margin-right:40px;
+    margin-right: 40px;
 }
 
 h2.marseille {
@@ -220,62 +218,61 @@ h2.marseille {
     padding: 5px;
 }
 
-article.card-marseille{
-    margin-bottom:35px;
+article.card-marseille {
+    width: 30%;
+    margin-bottom: 35px;
 }
 
 article.card-marseille img {
-    width: 246px;
-    height: 124px;
+    width: 100%;
+    height: 120px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
 
-div.container{
+div.container {
     padding: 0px 10px 5px 10px;
     line-height: 0.6em;
 }
 
-.more{
+.more {
     font-weight: 700;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     padding-left: 12px;
 }
 
 /* populaire */
-
-div.card-populaire{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 section.populaire {
-    flex:1;
+    flex: 1;
     background: #F2F2F2;
     border-radius: 20px;
     padding: 20px;
 }
 
-.head-populaire{
-    display:flex;
+.head-populaire {
+    display: flex;
     justify-content: space-between;
 }
 
-.chart-icone {
+.chart-icon {
     display: flex;
     align-items: center;
 }
 
-article.card-populaire{
+div.card-populaire {
+    display: flex;
+    flex-direction: column;
+}
+
+article.card-populaire {
     background-color: #fff;
     border-radius: 20px;
     padding: 5px;
-    margin-bottom:35px;
+    margin-bottom: 45px;
 }
 
 article.card-populaire img {
-    width: 137px;
+    width: 33%;
     height: 144px;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
@@ -283,48 +280,58 @@ article.card-populaire img {
     object-position: center;
 }
 
-.content-populaire{
-    display:flex;
+.content-populaire {
+    display: flex;
 }
 
 .description-populaire {
-    padding-left : 20px;
+    padding-left: 20px;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
 }
 
-h3.populaire{
+h3.populaire {
     margin: 0;
 }
 
 /* star*/
-i.fa-solid.fa-star.blue{
+i.fa-solid.fa-star.blue {
     color: #0065FC;
-    font-size:0.8em;
+    font-size: 0.8em;
 }
 
-i.fa-solid.fa-star.grey{
+i.fa-solid.fa-star.grey {
     color: #F2F2F2;
-    font-size:0.8em;
+    font-size: 0.8em;
 }
 
 .star {
-    margin-top :auto;
+    margin-top: auto;
 }
 
 /* Activités Marseille */
 #activites {
-    margin-top : 60px;
+    margin-top: 60px;
+}
+
+.card-activite-marseille {
+    display: flex;
+    justify-content: space-between;
+}
+
+article.card-activites {
+    border-radius: 20px;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 article.card-activites img {
-    border-radius: 20px 20px 0 0;
-}
-
-article.card-activites img {
-    width: 302px;
+    width: 100%;
     height: 389px;
+    border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
 
@@ -342,12 +349,12 @@ footer {
 }
 
 footer ul {
-    list-style:none;
-    padding:0;
+    list-style: none;
+    padding: 0;
 }
 
 footer ul li {
-    text-align:left;
+    text-align: left;
 }
 
 footer ul li a {
@@ -358,272 +365,297 @@ footer ul li a {
 }
 
 /*  Tablette */
-@media screen and (max-width: 992px) {
-#home-page {
-width : auto;
-}
+@media screen and (max-width: 991px) {
+    header {
+        margin-top: 44px;
+    }
 
-nav ul{
-height:auto;
-}
+    nav ul {
+        height: auto;
+    }
 
-nav li:hover{
-color:#0065FC;
-border-top: none;
-border-bottom: 1px solid #0065FC;
-}
+    nav li:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 1px solid #0065FC;
+    }
 
-/* filters */
-button.filter {
-    margin: 5px;
-}
+    /* filters */
+    .title-filter {
+        font-size: 1rem;
+        margin-right: 10px;
+    }
 
-/*hébergements Marseille*/
-#hebergement {
-display: flex;
-justify-content: space-between;
-flex-direction: column;
-}
+    button.filter {
+        margin: 8px;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
 
-section.marseille {
-flex: 1;
-margin-right: 0;
-}
+    #filter i {
+        padding-right: 5px;
+    }
 
-section.populaire {
-margin-top: 50px;
-}
+    /*hébergements Marseille*/
+    #hebergement {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 
-div.card-populaire {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-}
+    section.marseille {
+        flex: 1;
+        margin-right: 0;
+    }
 
-article.card-populaire {
-width: 30%;
-height: auto;
-}
+    /*populaires*/
+    section.populaire {
+        margin-top: 50px;
+    }
 
-article.card-populaire img {
-width: 106px;
-height: 144px;
-display: flex;
-align-self: center;
-object-fit: cover;
-}
+    div.card-populaire {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-/* Activités Marseille */
-article.card-activites{
-width: 182px;
-}
+    h3.populaire {
+        font-size: 0.875rem;
+    }
 
-article.card-activites img {
-width: 182px;
-height: 211px;
-border-radius: 20px 20px 0px 0px;
-object-fit: cover;
-}
+    article.card-populaire {
+        width: 30%;
+        height: auto;
+    }
+
+    /* Activités Marseille */
+    article.card-activites {
+        border-radius: 20px;
+        width: 23%;
+    }
+
+    article.card-activites img {
+        width: 100%;
+        height: 250px;
+    }
 
 }
 
 /* Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #home-page {
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    padding: 2%;
-}
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        padding: 0;
+    }
 
-header {
-    display:flex;
-    flex-direction: column;
-    height: auto;
-}
+    main {
+        padding: 3%;
+    }
 
-#logo img {
-    margin-bottom: 25px;
-}
+    header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+    }
 
-nav{
-    width: 100%;
-}
+    img.logo {
+        margin-bottom: 30px;
+    }
 
-nav ul {
-    width: 100%;
-    padding-inline-start: 0;
-}
+    nav {
+        width: 100%;
+    }
 
-nav li {
-    display: flex;
-    border-top: none;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 20px;
-    flex: 1;
-    justify-content: space-around;
-    margin-right: 0;
-}
+    nav ul {
+        width: 100%;
+        padding-inline-start: 0;
+    }
 
-nav li:hover {
-    border-bottom: 2px solid #0065FC;
-    border-top: none;
-}
+    nav li {
+        display: flex;
+        border-top: none;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 20px;
+        flex: 1;
+        justify-content: space-around;
+        margin-right: 0;
+    }
 
-nav li a:hover{
-    color: #0065FC;
-}
+    nav li:hover {
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+    }
 
-/* form */
-.form-city{
-    justify-content: space-between;
-}
+    nav li a:hover {
+        color: #0065FC;
+    }
 
-i.fa-sharp.fa-solid.fa-location-dot{
-    background: #F2F2F2;
-    border: 1px solid #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
-    padding:20px;
-    color: #000;
-}
+    /* form */
+    .form-city {
+        justify-content: space-between;
+    }
 
-input#city{
-    width: 100%;
-}
+    i.fa-sharp.fa-solid.fa-location-dot {
+        background: #F2F2F2;
+        border: 1px solid #F2F2F2;
+        border-radius: 15px 0px 0px 15px;
+        padding: 20px;
+        color: #000;
+    }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: black;
-    opacity: 1; /* Firefox */
-}
+    input#city {
+        width: 100%;
+    }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: black;
-}
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: black;
+        opacity: 1;
+        /* Firefox */
+    }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: black;
-}
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: black;
+    }
 
-.search{
-    display:none;
-}
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: black;
+    }
+
+    .search {
+        display: none;
+    }
 
 
-i.fa-solid.fa-search {
-    color: #fff;
-    display: inline-block;
-    border-radius: 0px 15px 15px 0px;
-    background-color: #0065fc;
-    padding: 20px;
-}
+    i.fa-solid.fa-search {
+        color: #fff;
+        display: inline-block;
+        border-radius: 0px 15px 15px 0px;
+        background-color: #0065fc;
+        padding: 20px;
+    }
 
-/* filters */
-#filter {
-    display: inline-block;
-    margin: 20px 0;
-}
+    /* filters */
+    #filter {
+        display: inline-block;
+        margin: 20px 0;
+    }
 
-.title-filter {
-    display: block;
-}
+    .title-filter {
+        display: block;
+    }
 
-.button-filter {
-    display: flex;
-    flex-wrap: wrap;
-}
+    .button-filter {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-button.filter {
-    padding-left: 10px;
-    font-weight: 400;
-    font-size: 0.8em;
-    margin: 10px 5px;
-    text-align: left;
-    width: calc(50% - 10px);
-}
+    button.filter {
+        padding-left: 10px;
+        font-weight: 400;
+        font-size: 0.8em;
+        margin: 10px 5px;
+        text-align: left;
+        width: calc(50% - 10px);
+    }
 
-/*main */
-#hebergement {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column-reverse;
-}
+    /*hebergement */
+    #hebergement {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
 
-section.populaire {
-    margin-right: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 0px;
-    padding: 10px;
-    margin-bottom: 25px;
-}
+    section.populaire {
+        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 0px;
+        padding: 10px;
+        margin-bottom: 25px;
+    }
 
-.head-populaire {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
+    .head-populaire {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 
-.chart-icone {
-    display: flex;
-}
+    .chart-icone {
+        display: flex;
+    }
 
-h2.populaire{
-    display: flex;
-    flex: 5;
-}
+    h2.populaire {
+        display: flex;
+        flex: 5;
+    }
 
-div.card-populaire {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    div.card-populaire {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc(100% - 10px);
+    }
 
-article.card-populaire {
-    width: 100%;
-    height: auto;
-}
+    article.card-populaire {
+        width: 100%;
+        height: auto;
+    }
 
-section.marseille {
-    padding: 10px;
-}
+    section.marseille {
+        padding: 10px;
+    }
 
-article.card-marseille {
-    margin-bottom: 35px;
-    width: 100%;
-    height: auto;
-}
+    article.card-marseille {
+        margin-bottom: 35px;
+        width: 100%;
+        height: auto;
+    }
 
-article.card-marseille img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-}
+    article.card-marseille img {
+        width: 100%;
+        height: 180px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
 
-article.card-activites {
-    width: 100%;
-    margin-bottom: 25px;
-}
+    /* activites */
+    .card-activite-marseille {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+    }
 
-article.card-activites img {
-    width: 100%;
-    height: 211px;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-}
+    article.card-activites {
+        width: 100%;
+    }
 
-footer {
-    display: flex;
-    background-color: #F2F2F2;
-    margin-top: 20px;
-    padding: 25px;
-    flex-direction: column;
-    width: 100%;
-}
+    article.card-activites img {
+        width: 100%;
+        height: 211px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
 
-footer ul {
-    margin-top: 0px;
-}
+    /* footer */
+    footer {
+        display: flex;
+        background-color: #F2F2F2;
+        margin-top: 20px;
+        padding: 25px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer ul {
+        margin-top: 0px;
+    }
 
 }
